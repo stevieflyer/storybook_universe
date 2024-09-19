@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "storybook_universe"
+version = "0.1.0"
+description = ""
+authors = ["autom_admin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+# autom = { git = "git@github.com:NaturaFlex/autom.git", branch = "main" }
+autom = { path = "/home/steve/workspace/autom" }
+
+[tool.autom]
+qualifier = "storybook_universe"
+name = "StoryBook Universe"
+owner_qualifier = "autom_admin"
+owner_email = "admin@autom.com"
+description = ""
+python_version = "3.12"
+python_version_spec = "^3.12"
+publicity = "public"
+github_repo_url = "https://github.com/stevieflyer/storybook_universe.git"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
